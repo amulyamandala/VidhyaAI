@@ -21,13 +21,13 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
         >
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl">
-              <h1 className="font-display text-6xl font-bold text-white mb-6" data-testid="text-hero-title">
-                VidyaAI
+              <h1 className="font-display text-7xl lg:text-8xl font-black text-white mb-8 tracking-wide drop-shadow-lg" data-testid="text-hero-title">
+                VIDYA AI
               </h1>
-              <p className="text-xl text-white/90 mb-2 font-medium">
+              <p className="text-2xl text-white font-bold mb-4 tracking-wide drop-shadow-md">
                 Empowering Rural Teachers with AI
               </p>
-              <p className="text-lg text-white/80 mb-8 leading-relaxed max-w-2xl">
+              <p className="text-xl text-white/95 mb-10 leading-relaxed max-w-2xl font-medium drop-shadow-sm">
                 Multi-agent AI platform designed for rural Indian teachers managing multi-grade classes. 
                 Generate worksheets, track progress, and create culturally relevant content - all offline capable.
               </p>
@@ -58,10 +58,10 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl font-bold text-foreground mb-4" data-testid="text-features-title">
+            <h2 className="font-display text-4xl font-black text-foreground mb-6 tracking-wide" data-testid="text-features-title">
               AI-Powered Educational Tools
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-xl max-w-2xl mx-auto font-semibold">
               Designed specifically for rural educators managing diverse, multi-grade classrooms
             </p>
           </div>
@@ -72,8 +72,8 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-semibold text-lg mb-3">Multi-Grade Worksheets</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-bold text-xl mb-3 text-foreground">Multi-Grade Worksheets</h3>
+                <p className="text-base text-muted-foreground font-medium">
                   Generate culturally relevant worksheets with multiple difficulty levels for diverse classrooms
                 </p>
               </CardContent>
@@ -84,8 +84,8 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-semibold text-lg mb-3">Adaptive Planning</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-bold text-xl mb-3 text-foreground">Adaptive Planning</h3>
+                <p className="text-base text-muted-foreground font-medium">
                   Weekly lesson plans that adapt based on attendance, progress, and class dynamics
                 </p>
               </CardContent>
@@ -96,8 +96,8 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <BarChart3 className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-semibold text-lg mb-3">Progress Analytics</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-bold text-xl mb-3 text-foreground">Progress Analytics</h3>
+                <p className="text-base text-muted-foreground font-medium">
                   Track student progress and identify weak areas with automated performance insights
                 </p>
               </CardContent>
@@ -108,8 +108,8 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Lightbulb className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-semibold text-lg mb-3">Offline Support</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-bold text-xl mb-3 text-foreground">Offline Support</h3>
+                <p className="text-base text-muted-foreground font-medium">
                   Core features work without internet, syncing automatically when connected
                 </p>
               </CardContent>
@@ -122,34 +122,34 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl font-bold text-foreground mb-4" data-testid="text-how-it-works">
+            <h2 className="font-display text-4xl font-black text-foreground mb-6 tracking-wide" data-testid="text-how-it-works">
               Built for Rural Education
             </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="font-display text-2xl font-semibold mb-6">Smart Worksheet Generation</h3>
+              <h3 className="font-display text-3xl font-bold mb-6 text-foreground">Smart Worksheet Generation</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-semibold text-sm">1</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Input Topic or Chapter</h4>
-                    <p className="text-muted-foreground text-sm">Simply enter the subject matter you want to cover</p>
+                    <h4 className="font-bold mb-2 text-foreground">Input Topic or Chapter</h4>
+                    <p className="text-muted-foreground text-base font-medium">Simply enter the subject matter you want to cover</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-semibold text-sm">2</div>
                   <div>
-                    <h4 className="font-semibold mb-1">AI Creates Multi-Level Content</h4>
-                    <p className="text-muted-foreground text-sm">Generates easy, medium, and hard difficulty variations</p>
+                    <h4 className="font-bold mb-2 text-foreground">AI Creates Multi-Level Content</h4>
+                    <p className="text-muted-foreground text-base font-medium">Generates easy, medium, and hard difficulty variations</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-semibold text-sm">3</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Culturally Relevant Examples</h4>
-                    <p className="text-muted-foreground text-sm">Uses local context and regional language support</p>
+                    <h4 className="font-bold mb-2 text-foreground">Culturally Relevant Examples</h4>
+                    <p className="text-muted-foreground text-base font-medium">Uses local context and regional language support</p>
                   </div>
                 </div>
               </div>
@@ -165,27 +165,27 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mt-16">
             <div className="lg:order-2">
-              <h3 className="font-display text-2xl font-semibold mb-6">Real-Time Progress Tracking</h3>
+              <h3 className="font-display text-3xl font-bold mb-6 text-foreground">Real-Time Progress Tracking</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-chart-2 rounded-full flex items-center justify-center flex-shrink-0 text-white font-semibold text-sm">1</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Automatic Performance Segmentation</h4>
-                    <p className="text-muted-foreground text-sm">Students grouped by achievement levels (75%, 65%, 55%, below 45%)</p>
+                    <h4 className="font-bold mb-2 text-foreground">Automatic Performance Segmentation</h4>
+                    <p className="text-muted-foreground text-base font-medium">Students grouped by achievement levels (75%, 65%, 55%, below 45%)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-chart-2 rounded-full flex items-center justify-center flex-shrink-0 text-white font-semibold text-sm">2</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Weak Topic Detection</h4>
-                    <p className="text-muted-foreground text-sm">AI identifies subjects where multiple students struggle</p>
+                    <h4 className="font-bold mb-2 text-foreground">Weak Topic Detection</h4>
+                    <p className="text-muted-foreground text-base font-medium">AI identifies subjects where multiple students struggle</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-chart-2 rounded-full flex items-center justify-center flex-shrink-0 text-white font-semibold text-sm">3</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Adaptive Remediation</h4>
-                    <p className="text-muted-foreground text-sm">Generates targeted follow-up activities and tutorials</p>
+                    <h4 className="font-bold mb-2 text-foreground">Adaptive Remediation</h4>
+                    <p className="text-muted-foreground text-base font-medium">Generates targeted follow-up activities and tutorials</p>
                   </div>
                 </div>
               </div>
@@ -204,11 +204,11 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl font-bold mb-4" data-testid="text-cta-title">
+          <h2 className="font-display text-4xl font-black mb-6 tracking-wide" data-testid="text-cta-title">
             Ready to Transform Your Teaching?
           </h2>
-          <p className="text-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Join rural educators across India who are using VidyaAI to create more engaging, effective learning experiences
+          <p className="text-xl mb-10 text-primary-foreground font-semibold max-w-2xl mx-auto">
+            Join rural educators across India who are using VIDYA AI to create more engaging, effective learning experiences
           </p>
           <Button 
             variant="secondary" 
@@ -217,7 +217,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
             onClick={onGetStarted}
             data-testid="button-start-now"
           >
-            Start Using VidyaAI
+            Start Using VIDYA AI
           </Button>
         </div>
       </section>
