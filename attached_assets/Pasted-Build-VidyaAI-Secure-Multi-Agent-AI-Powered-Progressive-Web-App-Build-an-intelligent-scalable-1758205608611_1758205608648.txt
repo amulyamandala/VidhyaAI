@@ -1,0 +1,54 @@
+Build VidyaAI - Secure Multi-Agent AI-Powered Progressive Web App*
+
+Build an intelligent, scalable, Progressive Web App named VidyaAI designed for rural Indian teachers managing multi-grade classes. The app must be modular, offline-capable, and use multi-agent orchestration via Crew AI, LangChain, or n8n. Security through firewall and end-to-end encryption is mandatory to protect student and faculty data.
+
+***
+
+### Step 1: Core PWA and UI Enhancements  
+- Mobile-first responsive design with fast load and smooth transitions.  
+- Clean, minimalistic UI inspired by https://sahayak-b85697.gitlab.io/home
+- Large, accessible buttons/inputs; local language font and input support.  
+- Offline caching of lessons, worksheets, and dashboards for reliable use with poor/no internet.  
+- Easy installation via browser link or QR code, no app store dependency.
+
+ Step 2: Multi-Agent AI Architecture  
+- Use Crew AI or LangChain to build specialized AI agents for: question paper generation, OCR-based automated correction, performance analytics, feedback generation.  
+- Use n8n to orchestrate multi-agent workflows and manage integrations with external data sources, school management tools, and real-time notifications.
+### Step 3: AI-Powered Features to Integrate (Detailed)  
+
+1. Hyper-Local Content Generator  
+   Produces context-aware, culturally relevant stories and examples in regional languages based on teacher prompts.  
+   
+2. Multi-Grade Worksheet Generator  
+   Generates worksheets tailored to multi-grade classrooms with difficulty tiers (easy, medium, hard), input via topic or chapter.  
+   
+   
+3. Blackboard-Friendly Visual Aids Generator  
+   Creates simple line-art or ASCII diagrams teachers can easily replicate on chalkboards.  
+   
+4. Weekly Lesson Planner (Agentic)  
+   Adapts week-by-week lesson plans using attendance, topic mastery, and class progress data.  
+   
+5. Auto Worksheet Correction  
+   Uses OCR to read handwritten submissions; provides immediate, detailed error feedback and explanations.  
+   
+6. Weak Topic Tracker  
+   Automatically logs topics where multiple students struggle, surfacing these for teacher focus.  
+   
+7. Adaptive Remediation Generator  
+   Generates customized follow-up quizzes, flashcards, or audio tutorials targeting weak areas.  
+   
+8. Dyslexia-Aware Reading Feedback  
+   Detects early signs of reading disabilities from audio/text samples, alerts teacher.  
+   
+9. Offline Support  
+    Provides core features offline via service worker caching; auto syncs on reconnect.  
+   
+10. Government Form Auto-Fill  
+    Converts brief teacher notes into duly completed digital government forms (e.g., UDISE+, HMIS). 
+   
+   
+11. Automatic Performance Segmentation  
+    After marks input, segments students into achievement bands (top 75%, 65%, 55%, below 45%) for transparent insight and targeted remediation.
+
+***
