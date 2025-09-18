@@ -5,8 +5,11 @@ import Header from "./Header";
 import Dashboard from "./Dashboard";
 import WorksheetGenerator from "./WorksheetGenerator";
 import ProgressTracker from "./ProgressTracker";
+import LessonPlanner from "./LessonPlanner";
+import AutoCorrection from "./AutoCorrection";
+import StudentDatabase from "./StudentDatabase";
 
-type AppState = 'landing' | 'auth' | 'dashboard' | 'worksheet-generator' | 'progress-tracker';
+type AppState = 'landing' | 'auth' | 'dashboard' | 'worksheet-generator' | 'progress-tracker' | 'lesson-planner' | 'auto-correction' | 'student-database';
 
 interface User {
   name: string;
@@ -95,8 +98,9 @@ export default function MainApp() {
             <Dashboard
               onWorksheetGenerator={() => handleNavigation('worksheet-generator')}
               onProgressTracker={() => handleNavigation('progress-tracker')}
-              onLessonPlanner={() => console.log('Lesson Planner clicked')} // todo: implement
-              onAutoCorrection={() => console.log('Auto Correction clicked')} // todo: implement
+              onLessonPlanner={() => handleNavigation('lesson-planner')}
+              onAutoCorrection={() => handleNavigation('auto-correction')}
+              onStudentDatabase={() => handleNavigation('student-database')}
             />
           )}
           
@@ -131,6 +135,57 @@ export default function MainApp() {
                 </div>
               </div>
               <ProgressTracker />
+            </div>
+          )}
+
+          {currentView === 'lesson-planner' && (
+            <div>
+              <div className="border-b bg-background/95 backdrop-blur">
+                <div className="container mx-auto px-6 py-2">
+                  <button 
+                    onClick={() => handleNavigation('dashboard')}
+                    className="text-sm text-muted-foreground hover:text-foreground"
+                    data-testid="button-back-to-dashboard"
+                  >
+                    ← Back to Dashboard
+                  </button>
+                </div>
+              </div>
+              <LessonPlanner />
+            </div>
+          )}
+
+          {currentView === 'auto-correction' && (
+            <div>
+              <div className="border-b bg-background/95 backdrop-blur">
+                <div className="container mx-auto px-6 py-2">
+                  <button 
+                    onClick={() => handleNavigation('dashboard')}
+                    className="text-sm text-muted-foreground hover:text-foreground"
+                    data-testid="button-back-to-dashboard"
+                  >
+                    ← Back to Dashboard
+                  </button>
+                </div>
+              </div>
+              <AutoCorrection />
+            </div>
+          )}
+
+          {currentView === 'student-database' && (
+            <div>
+              <div className="border-b bg-background/95 backdrop-blur">
+                <div className="container mx-auto px-6 py-2">
+                  <button 
+                    onClick={() => handleNavigation('dashboard')}
+                    className="text-sm text-muted-foreground hover:text-foreground"
+                    data-testid="button-back-to-dashboard"
+                  >
+                    ← Back to Dashboard
+                  </button>
+                </div>
+              </div>
+              <StudentDatabase />
             </div>
           )}
         </main>

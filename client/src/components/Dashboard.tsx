@@ -19,13 +19,15 @@ interface DashboardProps {
   onLessonPlanner?: () => void;
   onProgressTracker?: () => void;
   onAutoCorrection?: () => void;
+  onStudentDatabase?: () => void;
 }
 
 export default function Dashboard({ 
   onWorksheetGenerator = () => console.log('Worksheet Generator clicked'), // todo: remove mock functionality
   onLessonPlanner = () => console.log('Lesson Planner clicked'), // todo: remove mock functionality
   onProgressTracker = () => console.log('Progress Tracker clicked'), // todo: remove mock functionality
-  onAutoCorrection = () => console.log('Auto Correction clicked') // todo: remove mock functionality
+  onAutoCorrection = () => console.log('Auto Correction clicked'), // todo: remove mock functionality
+  onStudentDatabase = () => console.log('Student Database clicked') // todo: remove mock functionality
 }: DashboardProps) {
   // todo: remove mock functionality - replace with real data
   const mockStats = {
@@ -124,7 +126,7 @@ export default function Dashboard({
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <Button 
                   onClick={onWorksheetGenerator}
                   className="h-24 flex-col gap-2 text-left justify-start"
@@ -174,6 +176,19 @@ export default function Dashboard({
                   <div>
                     <div className="font-semibold">Auto Correction</div>
                     <div className="text-xs text-muted-foreground">OCR-based grading</div>
+                  </div>
+                </Button>
+
+                <Button 
+                  onClick={onStudentDatabase}
+                  className="h-24 flex-col gap-2 text-left justify-start"
+                  variant="outline"
+                  data-testid="button-student-database"
+                >
+                  <Users className="h-6 w-6" />
+                  <div>
+                    <div className="font-semibold">Student Database</div>
+                    <div className="text-xs text-muted-foreground">Manage student records</div>
                   </div>
                 </Button>
               </div>
